@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Russo+One&display=swap');
+/*
+font-family: 'Rubik Doodle Shadow', system-ui;
+*/
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    flex-direction:column;
+    font-family: 'Russo One', sans-serif;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    color:#b31515;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.container img{
+    width:100px;
+}
+.container h1{
+    font-weight:bolder;
+    text-align: center;
+}
+.btn-cont{
+    margin-top:40px;
+}
+.btn-cont button{
+    width:100px;
+    height:30px;
+    border:0px ;
+    border-radius:0px;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+    margin-left:20px;
+}
+#no{
+    position:absolute;
+    left:50%;
+    transition: 0.3s;
+}
+#yes{
+    margin-left:-100px;
+}
+
+
+.falling-hearts {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.falling-hearts .heart {
+    position: absolute;
+    font-size: 24px;
+    opacity: 0;
+    animation: heartFall 5s ease-in-out infinite;
+}
+
+
+@keyframes heartFall {
+    0% {
+        transform: translateY(-100px) scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0;
+    }
+}
