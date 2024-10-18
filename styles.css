@@ -11,6 +11,7 @@ body{
     font-family: 'Russo One', sans-serif;
     background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
     color:#b31515;
+    overflow:hidden;
 }
 .container{
     display:flex;
@@ -19,7 +20,7 @@ body{
     flex-direction:column;
 }
 .container img{
-    width:100px;
+    width:150px;
 }
 .container h1{
     font-weight:bolder;
@@ -46,6 +47,7 @@ body{
 }
 
 
+/*falling hearts*/
 .falling-hearts {
     display: none;
     position: absolute;
@@ -74,3 +76,4 @@ body{
         opacity: 0;
     }
 }
+
